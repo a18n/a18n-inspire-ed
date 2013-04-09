@@ -14,21 +14,20 @@
         #   end if File.exists?(env_file)
         # end
 
-FACEBOOK_SECRET: '3cb5d23a3b43e4ddd30e2c26162c598d'
-FACEBOOK_APP_ID: '486981084689070'
+
 
 # if you wanted to have different settings per rails environment.... 
-# if Rails.env.development?
-#     FACEBOOK_SECRET: adkf8794230ksndf234190234
-#     FACEBOOK_APP_ID: blahblah123456
-# end
-# 
-# if Rails.env.test?
-#     FACEBOOK_SECRET: adkf8794230ksndf234190234
-#     FACEBOOK_APP_ID: blahblah123456
-# end
-# 
-# if Rails.env.production?
-#     FACEBOOK_SECRET: adkf8794230ksndf234190234
-#     FACEBOOK_APP_ID: blahblah123456
-# end
+if Rails.env.development?
+    FACEBOOK_SECRET: '3cb5d23a3b43e4ddd30e2c26162c598d'
+    FACEBOOK_APP_ID: '486981084689070'
+end
+
+if Rails.env.test?
+    FACEBOOK_SECRET: '3cb5d23a3b43e4ddd30e2c26162c598d'
+    FACEBOOK_APP_ID: '486981084689070'
+end
+
+if Rails.env.production?
+    FACEBOOK_SECRET: '77dbee8d35889c3dc64dc7ff97dd673f'
+    FACEBOOK_APP_ID: '442524942499942'
+end
